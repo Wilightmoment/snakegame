@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>貪吃蛇</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SNAAAAAKE</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-	<script src="js/snake.js"></script>
-	<h1 style="text-align: center">貪吃蛇遊戲</h1>
-	<p id="grade" style="text-align: center; font-size: 1.5rem; color: #00cc99">
-		目前積分: 0分 
-		<i style="color: #ee9900; margin-left: 1rem; font-size: 20px;">按下任意鍵開始遊戲</i>
-	</p>
+    <div class="ready">
+        <div class="title">
+            <div class="block"></div>
+            SNAAAAAAKE
+            <div class="block"></div>
+        </div>
+        <p>PRESS [SPACE] TO START</p>
+    </div>
+    <div class="playing invisible">
+        <div class="play_board">
+            <div class="text-lt">SNAA</div>
+            <div class="text-tl">AAAAKE</div>
+            <div class="text-rb">SNAA</div>
+            <div class="text-br">AAAAKE</div>
+            <div class="play_board_score">
+                <span>score</span>
+                <div class="score"><em>0</em></div>
+            </div>
+            <div class="play_board_best">
+                <span>best</span>
+                <div class="best">0</div>
+            </div>
+        </div>
+    </div>
+    <div class="end invisible">
+        <div class="title">
+            <div class="block"></div>
+            GAME OVER
+            <div class="block"></div>
+        </div>
+        <div class="score_board">
+            <div class="board">
+                <div class="board_title">score</div>
+                <div class="score">0</div>
+            </div>
+            <div>/</div>
+            <div class="board">
+                <div class="board_title">best</div>
+                <div class="best">0</div>
+            </div>
+        </div>
+        <div class="restart">RESTART?</div>
+        <div class="yes_no">
+            <p>YES[Y]</p><p>NO[N]</p>
+        </div>
+    </div>
+    <script src="js/snake.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.3.10/Tone.min.js"></script>
 </body>
 </html>

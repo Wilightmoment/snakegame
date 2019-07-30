@@ -1,0 +1,118 @@
+*
+    box-sizing: border-box
+body, html
+    margin: 0
+    padding: 0
+    font-size: 36px
+    font-family: 'Press Start 2P', cursive
+    color: white
+.invisible
+    display: none !important
+.title
+    display: flex
+    justify-content: center
+    align-items: center
+    .block
+        width: 40px
+        height: 40px
+        background-color: #fff
+        margin: 0 .75rem
+// ready
+.ready
+    display: flex
+    background-image: url(../img/bg-start.svg)
+    background-position: center
+    background-size: cover
+    height: 100vh
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    & > p
+        font-size: 24px
+        color: #00FFE2
+        margin-top: 1.5rem    
+// playing
+.playing
+    height: 100vh
+    background-color: black
+    display: flex
+    justify-content: center
+    align-items: center
+    .play_board
+        width: 1120px
+        height: 640px
+        position: relative
+    .text-lt
+        position: absolute
+        transform: rotate(270deg)
+        top: 1%
+        left: -9%
+    .text-tl
+        position: absolute
+        top: -7%
+        left: 0
+    .text-rb
+        position: absolute
+        transform: rotate(90deg)
+        bottom: 1%
+        right: -9%
+    .text-br
+        position: absolute
+        transform: rotate(180deg)
+        bottom: -7%
+        right: 0
+    .play_board_score
+        position: absolute
+        display: flex
+        align-items: center
+        right: 0
+        top: -7%
+        span
+            font-size: 16px
+            margin-right: .5rem
+    .play_board_best
+        position: absolute
+        align-items: center
+        display: flex
+        bottom: -7%
+        left: 0
+        span
+            font-size: 16px
+            margin-right: .5rem
+.rows
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    .lattice
+        width: 40px
+        height: 40px
+        border: 1px solid #002A9D
+// end
+.end
+    background-color: #000000
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+.score_board
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 1.5rem 0
+    .board
+        margin: 0 1.75rem
+        text-align: center
+        .board_title
+            font-size: 16px
+            margin-bottom: .5rem
+.restart
+    background-color: #ffffff
+    color: black
+    padding: .25rem
+
+.yes_no
+    display: flex
+    color: #00FFE2
+    & > p
+        margin: 1rem
