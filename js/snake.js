@@ -45,7 +45,7 @@ function Food () {
     this.width = 40
     this.height = 40
     this.position = 'absolute'
-    this.backgroundImage = "url('../img/ic-point.svg')"
+    this.backgroundImage = "url('/img/ic-point.svg')"
     this.backgroundColor = 'rgba(255, 255, 255, 0.2)'
     this.x = 0
     this.y = 0
